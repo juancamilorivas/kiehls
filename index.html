@@ -15,7 +15,14 @@
     <title>Kiehl's</title>
 
     <style>
-    
+   
+
+      @media (max-width: 375px) {
+        /* Cambiar la imagen a la más pequeña cuando el ancho de pantalla es 375px o menos */
+        .image-banner {
+          content: url("./public/mobile.png");
+        }
+      }
 
       * {
         box-sizing: border-box;
@@ -54,7 +61,6 @@
         font-family: "Times New Roman";
         font-weight: bold;
         text-align: center;
-
       }
 
       .title-medium-commet {
@@ -64,17 +70,14 @@
         font-family: "Times New Roman";
         max-width: 1024px;
         text-align: center;
-
-
       }
 
       .title-small-comment {
         font-size: 12px;
         color: #000000;
         margin-bottom: 30px;
-        font-family: "Times New Roman";
+        font-family: "Arial";
         text-align: center;
-
       }
 
       /*FORMULARIO*/
@@ -142,7 +145,6 @@
         font-size: 14px;
         width: 220px;
         margin-bottom: 18px;
-
       }
 
       .input_phone {
@@ -150,7 +152,6 @@
         border-bottom: 1px solid #000000;
         font-size: 14px;
         width: 220px;
-
       }
 
       input:focus {
@@ -246,10 +247,6 @@
         transition: all 0.35s;
       }
 
-     
-
-      
-
       .switch-title {
         font-size: 17px;
         font-weight: bold;
@@ -319,19 +316,17 @@
           <!--TITULOS-->
           <div class="container-title">
             <p class="title">
-              CONOCE MÁS SOBRE TU PIEL Y DESCUBRE LA CALIDAD Y EFICACIA QUE KIEHL’S TIENE PARA TI.
+              CONOCE MÁS SOBRE TU PIEL Y DESCUBRE LA CALIDAD Y EFICACIA QUE
+              KIEHL’S TIENE PARA TI.
             </p>
             <p class="title-medium-commet">
-              REGÍSTRATE Y DISFRUTA DE BENEFICIOS PERSONALIZADOS, RECOMENDACIONES DE EXPERTOS.
+              REGÍSTRATE Y DISFRUTA DE BENEFICIOS PERSONALIZADOS,
+              RECOMENDACIONES DE EXPERTOS.
             </p>
-
-         
           </div>
 
-       
-
           <div class="form-container">
-            <p  class="title-small-comment">
+            <p class="title-small-comment">
               Los campos marcados con * son obligatorios.
             </p>
             <div class="name-container">
@@ -703,7 +698,8 @@
                   for="flexSwitchCheckDefault2"
                 ></label>
                 <p>
-                  Debes tener 16 años como mínimo para poder enviar tu solicitud.
+                  Debes tener 16 años como mínimo para poder enviar tu
+                  solicitud.
                 </p>
               </div>
 
@@ -715,9 +711,7 @@
                 datos personales, consulta nuestra política de privacidad.
               </p>
 
-              <p class="container mb-5">
-                KIEHL'S forma parte de L’Oréal Luxe.
-              </p>
+              <p class="container mb-5">KIEHL'S forma parte de L’Oréal Luxe.</p>
             </div>
 
             <button class="ov-btn-slide-left" type="submit">
